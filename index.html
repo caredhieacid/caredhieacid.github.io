@@ -28,8 +28,8 @@
             <ul class="nav-links">
                 <li><a href="#home">首页</a></li>
                 <li><a href="#about">关于我</a></li>
-                <li><a href="#experience">经历</a></li>
-                <li><a href="#projects">项目</a></li>
+                <li><a href="#experience">实习经历</a></li>
+                <li><a href="#projects">商业项目</a></li>
                 <li><a href="#honors">荣誉墙</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
@@ -75,7 +75,6 @@
                         持有<strong>3项软著及专利</strong>。
                     </p>
                 </div>
-                <!-- Skills remain similar but concise -->
                 <div class="skills-wrapper">
                     <h3>核心竞争力</h3>
                     <div class="skills">
@@ -91,14 +90,14 @@
 
         <!-- Experience Section (Timeline) -->
         <section id="experience" class="section-container">
-            <h2 class="section-title"><span>工作与科研经历</span></h2>
+            <h2 class="section-title"><span>实习与科研经历</span></h2>
             <div class="timeline">
                 <!-- Longson -->
                 <div class="timeline-item left fade-in-right">
                     <div class="timeline-content glass-card">
                         <span class="date">2024.09 - 至今</span>
                         <h3>龙芯中科技术股份有限公司</h3>
-                        <p><strong>安全应用事业部 - 软件工程师 (Beijing/Remote)</strong></p>
+                        <p><strong>安全应用事业部 - 软件工程师 (实习)</strong></p>
                         <p class="description">
                             负责龙芯 3C6000/2K3000 服务器的 AI 环境搭建与大模型适配。
                             完成了 Dify 平台私有化部署，解决 Python 核心库在 LoongArch 架构下的构建难题。
@@ -112,7 +111,7 @@
                     <div class="timeline-content glass-card">
                         <span class="date">2024.09 - 至今</span>
                         <h3>四川省院士（专家）工作站</h3>
-                        <p><strong>进站助研员 / 项目组长 / 竞赛队长</strong></p>
+                        <p><strong>进站助研员 / 项目组长 (实习)</strong></p>
                         <p class="description">
                             主导数字人项目后端架构，实现全模态大模型应用。
                             管理显卡集群服务器与 Gitlab，实打实扛起实验室真实业务开发重任。
@@ -121,15 +120,15 @@
                     </div>
                 </div>
 
-                <!-- Baidu (Based on title provided in prompt, mapped to timeline roughly or current) -->
+                <!-- Baidu -->
                 <div class="timeline-item left fade-in-right">
                     <div class="timeline-content glass-card">
                         <span class="date">2025.11 - 至今</span>
                         <h3>百度飞桨 (PaddlePaddle)</h3>
-                        <p><strong>文心教育生态 K12 平台 - 全栈开发/架构师</strong></p>
+                        <p><strong>文心教育生态 K12 平台 - 远程实习 (全栈)</strong></p>
                         <p class="description">
                             隶属百度飞桨与文心大模型联合团队。打造面向青少年的 AI 实践赋能平台。
-                            全栈开发 MERN 架构智能车门户，设计高交互动态商品配置引擎与智能营销规则引擎。
+                            全程衔接前后端技术链路，设计并开发可视化标注工具，助力“AI实践游戏化”。
                         </p>
                     </div>
                 </div>
@@ -138,10 +137,47 @@
 
         <!-- Projects Section -->
         <section id="projects" class="section-container">
-            <h2 class="section-title"><span>精选商业落地项目</span></h2>
+            <h2 class="section-title"><span>精选商业落地项目 (6项)</span></h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
+
+                <!-- Baidu Smart Car -->
                 <div class="project-card glass-card fade-in-up">
+                    <div class="project-image placeholder-img"
+                        style="background: linear-gradient(135deg, #232526 0%, #414345 100%);">
+                        <div class="project-icon">🏎️</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span class="tag">MERN Stack</span><span class="tag">System
+                                Architect</span></div>
+                        <h3>百度飞桨智能小车及网站建设</h3>
+                        <p>
+                            <strong>全栈架构师 | 2025.12 - 至今</strong><br>
+                            独立架构并全栈开发官方核心门户。基于 MERN 架构，自主研发高交互动态商品配置引擎(Product Configurator)。
+                            设计高扩展性智能营销规则引擎，前端使用 TailwindCSS + Framer Motion 打造极具科技感的响应式 UI。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Baidu K12 Platform -->
+                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="project-image placeholder-img"
+                        style="background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="project-icon">🎮</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span class="tag">AI Gamification</span><span class="tag">Full
+                                Stack</span></div>
+                        <h3>百度PP飞桨文心教育生态K12平台</h3>
+                        <p>
+                            <strong>全栈开发 | 2025.11 - 至今</strong><br>
+                            打造面向青少年的 AI 实践赋能平台。核心工作聚焦多模态数据标注体系全栈搭建，
+                            设计可视化标注工具，降低青少年 AI 技术实践门槛，助力“游戏搭建轻量化”落地。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 1: Huaxi -->
+                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.2s;">
                     <div class="project-image placeholder-img"
                         style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
                         <div class="project-icon">🏥</div>
@@ -157,8 +193,8 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.1s;">
+                <!-- Project 2: PetroChina -->
+                <div class="project-card glass-card fade-in-up">
                     <div class="project-image placeholder-img"
                         style="background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);">
                         <div class="project-icon">🛢️</div>
@@ -175,8 +211,8 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.2s;">
+                <!-- Project 3: Alumni Hall -->
+                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.1s;">
                     <div class="project-image placeholder-img"
                         style="background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);">
                         <div class="project-icon">🎓</div>
@@ -193,8 +229,8 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.3s;">
+                <!-- Project 4: Contracts -->
+                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.2s;">
                     <div class="project-image placeholder-img"
                         style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
                         <div class="project-icon">📜</div>
@@ -210,6 +246,7 @@
                         </p>
                     </div>
                 </div>
+
             </div>
         </section>
 
