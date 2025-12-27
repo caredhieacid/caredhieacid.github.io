@@ -5,7 +5,7 @@ import sys
 # Set encoding to utf-8 for stdout/stderr just in case
 sys.stdout.reconfigure(encoding='utf-8')
 
-pdf_path = "莫胜杰简历2025原稿(1).pdf"
+pdf_path = "龙芯中科-莫胜杰简历.pdf"
 output_path = "resume_content.txt"
 
 try:
