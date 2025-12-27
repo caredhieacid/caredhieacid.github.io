@@ -4,110 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
+    <title>莫胜杰 - 个人主页</title>
+    <meta name="description" content="莫胜杰的个人作品集与简历">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Use Noto Sans SC for Chinese and Outfit for English numbers/headers -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
 
 <body>
-    <div class="background-glow"></div>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
 
     <header class="glass-nav">
         <nav>
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">MSJ.Dev</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#experience">经历 & 荣誉</a></li>
+                <li><a href="#projects">项目作品</a></li>
+                <li><a href="#contact">联系方式</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <div class="profile-img-container">
-                    <img src="assets/profile.png" alt="Profile" class="profile-img">
+                    <img src="assets/profile.png" alt="莫胜杰" class="profile-img">
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Available for hire
+                    </div>
                 </div>
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="glitch" data-text="caredhieacid">caredhieacid</h1>
-                <p class="subtitle">Developer & Creator</p>
-                <a href="#projects" class="cta-button">View Work</a>
+                <p class="greeting">你好，我是</p>
+                <h1 class="glitch" data-text="莫胜杰">莫胜杰</h1>
+                <p class="subtitle typing-effect">全栈开发者 | 创新者 | 技术爱好者</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="cta-button primary">查看作品</a>
+                    <a href="#experience" class="cta-button secondary">了解详细经历</a>
+                </div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section-container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-card glass-card">
-                <p>
-                    I am a passionate developer focusing on creating clean, efficient, and visually stunning digital
-                    experiences.
-                    I love turning complex problems into simple, beautiful solutions.
-                </p>
-                <div class="skills">
-                    <span class="skill-tag">Web Development</span>
-                    <span class="skill-tag">UI/UX Design</span>
-                    <span class="skill-tag">Open Source</span>
+            <h2 class="section-title"><span>关于我</span></h2>
+            <div class="about-card glass-card fade-in-up">
+                <div class="about-text">
+                    <p>
+                        [简介待补充] 我是一名热衷于技术的开发者，专注于构建高效、美观且具有创新性的Web应用。
+                        我喜欢探索新技术，并将其应用于解决实际问题。
+                    </p>
+                </div>
+                <div class="skills-wrapper">
+                    <h3>技术栈</h3>
+                    <div class="skills">
+                        <!-- Placeholders - Update with actual skills -->
+                        <span class="skill-tag">JavaScript / TS</span>
+                        <span class="skill-tag">Vue.js / React</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Web Design</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Experience & Honors Section (Timeline) -->
+        <section id="experience" class="section-container">
+            <h2 class="section-title"><span>经历 & 荣誉</span></h2>
+            <div class="timeline">
+                <!-- Honors Placeholder -->
+                <div class="timeline-item left fade-in-right">
+                    <div class="timeline-content glass-card">
+                        <span class="date">2023 - 2024</span>
+                        <h3>主要荣誉 / 奖项</h3>
+                        <p>在此展示您的重要奖项（如：xx大赛一等奖、xx奖学金等）。</p>
+                        <ul class="detail-list">
+                            <li>🏆 某某知名科技竞赛 一等奖</li>
+                            <li>📜 优秀学业奖学金</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Placeholder -->
+                <div class="timeline-item right fade-in-left">
+                    <div class="timeline-content glass-card">
+                        <span class="date">2021 - 2025 (预计)</span>
+                        <h3>教育背景</h3>
+                        <p>某某大学 | 计算机科学与技术</p>
+                        <ul class="detail-list">
+                            <li>主修课程：数据结构、算法、操作系统、Web开发</li>
+                            <li>GPA: 3.x / 4.0</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Work/Project Experience Placeholder -->
+                <div class="timeline-item left fade-in-right">
+                    <div class="timeline-content glass-card">
+                        <span class="date">2023.06 - 2023.09</span>
+                        <h3>实习 / 项目经历 Name</h3>
+                        <p>某某科技公司 | 前端开发实习生</p>
+                        <p class="description">
+                            负责公司主要产品的界面重构与性能优化，提升了用户体验。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
         <section id="projects" class="section-container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title"><span>精选项目</span></h2>
             <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card glass-card">
+                <!-- Project 1 -->
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-image placeholder-img"></div>
                     <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A cool project description goes here. It solves a specific problem.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue 3</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <h3>[项目名称 A]</h3>
+                        <p>这是一个很棒的项目描述。它解决了[痛点]，使用了[核心技术]。</p>
                         <div class="project-links">
-                            <a href="#">Demo</a>
-                            <a href="#">Code</a>
+                            <a href="#" class="link-btn">Live Demo <i class="arrow-icon">→</i></a>
+                            <a href="#" class="link-btn">GitHub <i class="github-icon"></i></a>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 2 -->
-                <div class="project-card glass-card">
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="project-image placeholder-img"></div>
                     <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>Another amazing project showcased here with cool tech details.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <h3>[项目名称 B]</h3>
+                        <p>另一个令人印象深刻的项目。展示了后端或算法能力。</p>
                         <div class="project-links">
-                            <a href="#">Demo</a>
-                            <a href="#">Code</a>
+                            <a href="#" class="link-btn">查看代码 <i class="arrow-icon">→</i></a>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
-                <div class="project-card glass-card">
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="project-image placeholder-img"></div>
                     <div class="project-info">
-                        <h3>Project Three</h3>
-                        <p>Brief overview of the third project emphasizing its impact.</p>
+                        <div class="project-tags">
+                            <span class="tag">Full Stack</span>
+                        </div>
+                        <h3>[项目名称 C]</h3>
+                        <p>个人独立开发的全栈应用，包含完整的用户系统与数据管理。</p>
                         <div class="project-links">
-                            <a href="#">Demo</a>
-                            <a href="#">Code</a>
+                            <a href="#" class="link-btn">项目主页 <i class="arrow-icon">→</i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="section-container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-card glass-card">
-                <p>Interest in working together? Let's connect.</p>
-                <a href="mailto:example@email.com" class="contact-button">Say Hello</a>
-                <div class="social-links">
-                    <a href="https://github.com/caredhieacid">GitHub</a>
+            <h2 class="section-title"><span>联系方式</span></h2>
+            <div class="contact-card glass-card fade-in-up">
+                <p class="contact-text">无论是工作机会还是技术交流，随时欢迎联系！</p>
+                <div class="contact-actions">
+                    <a href="mailto:yours@email.com" class="contact-pill email-pill">
+                        📧 发送邮件
+                    </a>
+                </div>
+                <div class="social-links-large">
+                    <a href="https://github.com/caredhieacid" target="_blank" class="social-item">
+                        <span>GitHub</span>
+                    </a>
+                    <!-- Add more social links here -->
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 caredhieacid. Built with creativity.</p>
+        <p>&copy; 2025 莫胜杰. Designed & Built with ❤️.</p>
     </footer>
 
     <script src="script.js"></script>
