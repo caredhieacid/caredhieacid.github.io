@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <header class="glass-nav">
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <img src="assets/profile.png" alt="Profile" class="profile-img">
+                </div>
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="glitch" data-text="caredhieacid">caredhieacid</h1>
+                <p class="subtitle">Developer & Creator</p>
+                <a href="#projects" class="cta-button">View Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card glass-card">
+                <p>
+                    I am a passionate developer focusing on creating clean, efficient, and visually stunning digital
+                    experiences.
+                    I love turning complex problems into simple, beautiful solutions.
+                </p>
+                <div class="skills">
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Open Source</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A cool project description goes here. It solves a specific problem.</p>
+                        <div class="project-links">
+                            <a href="#">Demo</a>
+                            <a href="#">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>Another amazing project showcased here with cool tech details.</p>
+                        <div class="project-links">
+                            <a href="#">Demo</a>
+                            <a href="#">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>Brief overview of the third project emphasizing its impact.</p>
+                        <div class="project-links">
+                            <a href="#">Demo</a>
+                            <a href="#">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass-card">
+                <p>Interest in working together? Let's connect.</p>
+                <a href="mailto:example@email.com" class="contact-button">Say Hello</a>
+                <div class="social-links">
+                    <a href="https://github.com/caredhieacid">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 caredhieacid. Built with creativity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
