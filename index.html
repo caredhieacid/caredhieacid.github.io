@@ -49,7 +49,7 @@
                 <p class="greeting">你好，我是</p>
                 <h1 class="glitch" data-text="莫胜杰">莫胜杰</h1>
                 <p class="subtitle typing-effect">
-                    现任龙芯中科（实习生）软件工程师<br>
+                    中共党员 | 现任龙芯中科（实习生）软件工程师<br>
                     四川省院士（专家）工作站进站助研员 | 百度PP飞桨与文心项目架构师
                 </p>
                 <div class="hero-actions">
@@ -293,36 +293,55 @@
                     </div>
                 </div>
 
-                <!-- Media Showcase -->
-                <div
-                    style="margin: 2rem 0; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--glass-border);">
-                    <h4 style="color: #fff; margin-bottom: 1rem; font-size: 1.1rem;">📸 项目演示 & 🔊 音频样例</h4>
-
-                    <!-- Image -->
-                    <div style="margin-bottom: 1.5rem;">
-                        <img src="project_base/hunyuan/mainpage.png" alt="Hunyuan Podcast Studio UI"
-                            style="width: 100%; border-radius: 8px; border: 1px solid var(--glass-border); box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-                        <p
-                            style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; text-align: center;">
-                            (项目主界面：可视化的剧本编排与多角色导演台)</p>
+                <!-- Media Showcase (Carousel Version) -->
+                <div class="carousel-container">
+                    <!-- Slides -->
+                    <div class="carousel-slide fade active">
+                        <img src="project_base/hunyuan/mainpage.png" alt="Main UI">
+                        <div class="carousel-caption">项目主界面：可视化的剧本编排</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/hunyuan/deepresearch.png" alt="Deep Research">
+                        <div class="carousel-caption">Deep Research Agent 深度搜索</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/hunyuan/yinse.png" alt="Voice Cloning">
+                        <div class="carousel-caption">零样本语音克隆与音色管理</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/hunyuan/书库.png" alt="Library">
+                        <div class="carousel-caption">播客素材书库</div>
                     </div>
 
-                    <!-- Audio Players -->
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px;">
-                            <p style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;">🎙️ 深度搜索生成的AI新闻播客</p>
-                            <audio controls style="width: 100%; height: 40px;">
-                                <source src="project_base/hunyuan/我们的深度搜索功能生成的2025年12月11日的新闻播客(1).wav" type="audio/wav">
-                                您的浏览器不支持音频播放。
-                            </audio>
-                        </div>
-                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px;">
-                            <p style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;">🗣️ 四人粤语/方言对话演示</p>
-                            <audio controls style="width: 100%; height: 40px;">
-                                <source src="project_base/hunyuan/四人粤语对话.wav" type="audio/wav">
-                                您的浏览器不支持音频播放。
-                            </audio>
-                        </div>
+                    <!-- Controls -->
+                    <a class="prev">❮</a>
+                    <a class="next">❯</a>
+
+                    <!-- Dots -->
+                    <div class="carousel-dots">
+                        <span class="dot active-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <!-- Audio Players -->
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px;">
+                        <p style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;">🎙️ 深度搜索生成的AI新闻播客</p>
+                        <audio controls style="width: 100%; height: 40px;">
+                            <source src="project_base/hunyuan/我们的深度搜索功能生成的2025年12月11日的新闻播客(1).wav" type="audio/wav">
+                            您的浏览器不支持音频播放。
+                        </audio>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px;">
+                        <p style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;">🗣️ 四人粤语/方言对话演示</p>
+                        <audio controls style="width: 100%; height: 40px;">
+                            <source src="project_base/hunyuan/四人粤语对话.wav" type="audio/wav">
+                            您的浏览器不支持音频播放。
+                        </audio>
                     </div>
                 </div>
 
@@ -353,6 +372,279 @@
                     <ul style="padding-left: 1.2rem; list-style: disc;">
                         <li>践行 <strong>"模型即服务" (MaaS)</strong> 理念，通过 Agent Workflow 串联逻辑推理与 TTS 表现力。</li>
                         <li>引入 <strong>Deep Research Agent</strong> (联网搜索 + RAG)，增强模型对复杂主题深度理解，自动生成兼具深度与趣味性的对话脚本。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SC171 Project -->
+            <div class="glass-card fade-in-up" style="max-width: 100%; padding: 3rem; margin-top: 3rem;">
+                <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                    <div class="project-icon" style="font-size: 5rem; line-height: 1;">🏫</div>
+                    <div>
+                        <h3 style="font-size: 2rem; color: #fff; margin-top: 0;">实验室数字人教辅控制系统与MQTT协同</h3>
+                        <p
+                            style="color: var(--accent-secondary); font-weight: 600; font-size: 1.1rem; margin: 0.5rem 0 1rem;">
+                            第八届全国大学生嵌入式芯片与系统设计竞赛 全国总决赛二等奖 🥈
+                        </p>
+                        <div class="project-tags" style="margin-bottom: 1.5rem;">
+                            <span class="tag">Python/YOLOv11</span>
+                            <span class="tag">Flask/Vue3</span>
+                            <span class="tag">MQTT/ESP32</span>
+                            <span class="tag">SC171/Digital Human</span>
+                            <span class="tag">Multimodal AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel for SC171 -->
+                <div class="carousel-container">
+                    <div class="carousel-slide fade active">
+                        <img src="project_base/SC171/5277f6c22ca400a8cbee4d8d8a5347c5.png" alt="SC171 Project Image 1">
+                        <div class="carousel-caption">SC171 项目展示 1</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/19e3f44c490199c75a03cd2f146f52a0.jpg" alt="SC171 Project Image 2">
+                        <div class="carousel-caption">SC171 项目展示 2</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/1b3a0a239fba6021fed90fbea64814b1.jpg" alt="SC171 Project Image 3">
+                        <div class="carousel-caption">SC171 项目展示 3</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/2c4cdd48c6bf8c7e1a2418df5028b5e3.jpg" alt="SC171 Project Image 4">
+                        <div class="carousel-caption">SC171 项目展示 4</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/3.jpg" alt="SC171 Project Image 5">
+                        <div class="carousel-caption">SC171 项目展示 5</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/30abe37ff30d7e3e14bc5cd8291f0dd7.jpg" alt="SC171 Project Image 6">
+                        <div class="carousel-caption">SC171 项目展示 6</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/3a28b747c264a172c55ecbb4eb051e16.jpg" alt="SC171 Project Image 7">
+                        <div class="carousel-caption">SC171 项目展示 7</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/3ce911c60077e56b236fece933bade06.jpg" alt="SC171 Project Image 8">
+                        <div class="carousel-caption">SC171 项目展示 8</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/4cb4c2b14857bb71d56fe5355c34218d.jpg" alt="SC171 Project Image 9">
+                        <div class="carousel-caption">SC171 项目展示 9</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/6aa4809c4d471a950836d021545f0092.jpg" alt="SC171 Project Image 10">
+                        <div class="carousel-caption">SC171 项目展示 10</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/986acdbf0ad9ef0f16dd2157a79b894b.jpg" alt="SC171 Project Image 11">
+                        <div class="carousel-caption">SC171 项目展示 11</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/98a78c5a5f3aee4e3150ad9c7d6749c6.jpg" alt="SC171 Project Image 12">
+                        <div class="carousel-caption">SC171 项目展示 12</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/9e22ba5dd32b717090daa56d9d8945ab.jpg" alt="SC171 Project Image 13">
+                        <div class="carousel-caption">SC171 项目展示 13</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/a37b1b36935c143595cf7d58d22faa5c.jpg" alt="SC171 Project Image 14">
+                        <div class="carousel-caption">SC171 项目展示 14</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/c139817f1342581940fe4056c74e76d9.jpg" alt="SC171 Project Image 15">
+                        <div class="carousel-caption">SC171 项目展示 15</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/c2bade5c727e1864a5251bea4d41e610.png" alt="SC171 Project Image 16">
+                        <div class="carousel-caption">SC171 项目展示 16</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/cd3d70cfa80d4d5d7acd4e61bc71472d.jpg" alt="SC171 Project Image 17">
+                        <div class="carousel-caption">SC171 项目展示 17</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/d40b647dbeb16aea2947d1b2308687f4.jpg" alt="SC171 Project Image 18">
+                        <div class="carousel-caption">SC171 项目展示 18</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/dd44aa721faee1fa1d7680c4e2179bad.jpg" alt="SC171 Project Image 19">
+                        <div class="carousel-caption">SC171 项目展示 19</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/e70483f18d3864962ef02fbdf80ee751.jpg" alt="SC171 Project Image 20">
+                        <div class="carousel-caption">SC171 项目展示 20</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/eb65fd0c8838d998ae937abaca853dd1.jpg" alt="SC171 Project Image 21">
+                        <div class="carousel-caption">SC171 项目展示 21</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/ed00fa6e43e4efc200b12b55b2f0b348.jpg" alt="SC171 Project Image 22">
+                        <div class="carousel-caption">SC171 项目展示 22</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/fd0b2f19d062c30ecf28e1ecea865abc.png" alt="SC171 Project Image 23">
+                        <div class="carousel-caption">SC171 项目展示 23</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="project_base/SC171/微信图片_20250825113907_3206_1.jpg" alt="SC171 Project Image 24">
+                        <div class="carousel-caption">SC171 项目展示 24</div>
+                    </div>
+
+                    <a class="prev">❮</a>
+                    <a class="next">❯</a>
+
+                    <div class="carousel-dots" style="overflow-x: auto; white-space: nowrap; padding-bottom: 5px;">
+                        <span class="dot active-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="project-detail-content" style="color: var(--text-secondary); line-height: 1.8;">
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong>【项目概述】</strong> 针对传统校园管理痛点，构建集教学行为分析、校园安全预警、全屋智能控制于一体的综合智慧校园解决方案。
+                        系统深度融合边缘计算与云端大模型，实现对整栋教学楼的自动化管理与全天候安全守护。
+                    </p>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🛡️ 全场景校园安全守护 (Security & Safety)</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc; margin-bottom: 1rem;">
+                        <li><strong>危险行为预警</strong>：融合 YOLO 视觉检测与 Multimodal AI
+                            (Kimi/SiliconFlow)，图文联合分析识别霸凌、携带危险品等异常，准确率优于单一视觉方案。</li>
+                        <li><strong>周界入侵检测</strong>：利用电子围栏与姿态估计，智能监测翻墙、闯入行为，实时触发声光报警并推送至管理端。</li>
+                        <li><strong>消防联动</strong>：MQ2 传感器+视觉烟火检测双重验证，毫秒级识别火灾并自动触发排风断电等应急预案。</li>
+                    </ul>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">⚡ 区域自动化管理 & 📊 多维教学分析</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc; margin-bottom: 1rem;">
+                        <li><strong>整楼集中管控</strong>：基于 <strong>MQTT + ESP32</strong> 分布式架构，集中管理数百节点。根据课表自动调度灯光/空调，大幅节能。
+                        </li>
+                        <li><strong>全模态数字人交互</strong>：部署于广和通 SC171，支持语音指令（如“开启三楼所有自习室模式”）一键调度复杂场景。</li>
+                        <li><strong>教学行为分析</strong>：自研 YOLOv11 行为分类模型，统计专注度、抬头率等，生成教学质量评估报告。</li>
+                    </ul>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🧠 智慧数据中台</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc;">
+                        <li>构建基于 <strong>Dify + Text2SQL</strong> 的数据中台，打通教务/资产/监控三大数据库。管理员可用自然语言直接查询复杂数据，打破信息孤岛。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Galaxy Classroom Project -->
+            <div class="glass-card fade-in-up" style="max-width: 100%; padding: 3rem; margin-top: 3rem;">
+                <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                    <div class="project-icon" style="font-size: 5rem; line-height: 1;">🌃</div>
+                    <div>
+                        <h3 style="font-size: 2rem; color: #fff; margin-top: 0;">星河课堂：乡村孩子的AI天文学伴</h3>
+                        <p
+                            style="color: var(--accent-secondary); font-weight: 600; font-size: 1.1rem; margin: 0.5rem 0 1rem;">
+                            基于 ModelScope + Qwen 的沉浸式 AI 教育公益工程
+                        </p>
+                        <div class="project-tags" style="margin-bottom: 1.5rem;">
+                            <span class="tag">Python/Gradio</span>
+                            <span class="tag">MaaS/ModelScope</span>
+                            <span class="tag">Qwen-Instruct/Image</span>
+                            <span class="tag">Canvas沙盒</span>
+                            <span class="tag">AI公益</span>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://www.modelscope.cn/studios/caredhieacid/Galaxy_Classroom/summary"
+                                target="_blank"
+                                style="display: inline-block; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: #0b0c10; text-decoration: none; border-radius: 30px; font-weight: bold; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(102, 252, 241, 0.3);">
+                                🚀 在线体验 Demo (ModelScope)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel for Galaxy Classroom -->
+                <div class="carousel-container">
+                    <div class="carousel-slide fade active">
+                        <img src="lunarclassroom/微信图片_20251104173406_2269_6.png" alt="Galaxy Classroom UI">
+                        <div class="carousel-caption">星河课堂：让每个孩子都能“触摸星辰”</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="lunarclassroom/微信图片_20251104173657_2280_6.png" alt="AI Tutor">
+                        <div class="carousel-caption">星河课堂：让每个孩子都能“触摸星辰”</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="lunarclassroom/微信图片_20251104182756_2318_6.png" alt="Visualization">
+                        <div class="carousel-caption">星河课堂：让每个孩子都能“触摸星辰”</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="lunarclassroom/微信图片_20251105202144_2437_6.png" alt="Interactive Sandbox">
+                        <div class="carousel-caption">星河课堂：让每个孩子都能“触摸星辰”</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="lunarclassroom/微信图片_20251106191751_2489_6.png" alt="Poem Restoration">
+                        <div class="carousel-caption">星河课堂：让每个孩子都能“触摸星辰”</div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="lunarclassroom/微信图片_20251106191947_2505_6.png" alt="Tools">
+                        <div class="carousel-caption">星河课堂：让每个孩子都能“触摸星辰”</div>
+                    </div>
+
+                    <a class="prev">❮</a>
+                    <a class="next">❯</a>
+
+                    <div class="carousel-dots">
+                        <span class="dot active-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="project-detail-content" style="color: var(--text-secondary); line-height: 1.8;">
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong>【项目概述】</strong> 一套能和老师共同授课、与学生双向互动的“AI+课堂”系统。
+                        致力于将“昂贵、稀缺”的天文教学资源转译为“低成本、随取随用”的智能服务。
+                        利用 <strong>Qwen 大模型</strong> 将自然语言转化为可视化插图与交互演示，让乡村教室里的孩子也能“看见”抽象的宇宙。
+                    </p>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🔭 核心功能模块 (AI as Co-Pilot)</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc; margin-bottom: 1rem;">
+                        <li><strong>课堂 AI 助教</strong>：基于
+                            Qwen-Instruct，实现小学/初中/高中<strong>分层解答</strong>。主动推荐沙盒或生图工具，形成“问—看—懂”闭环。</li>
+                        <li><strong>科普可视化生成</strong>：提示词工程 + Qwen-Image 协作，将“月食原理”等抽象描述实时转译为 <strong>1024px
+                                高清板书级插图</strong>。</li>
+                        <li><strong>宇宙现象交互沙盒</strong>：纯前端 <strong>Canvas</strong>
+                            渲染日食/月食演化，学生拖动参数即可验证几何关系，<strong>低算力设备</strong>也能流畅运行。</li>
+                        <li><strong>诗词星空复原</strong>：提取古诗词意象（如牵牛织女），生成符合中国传统审美与科学方位的星空图，连接科学与人文。</li>
+                    </ul>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🛠️ 工程架构与稳定性设计</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc; margin-bottom: 1rem;">
+                        <li><strong>高鲁棒性设计</strong>：全链路实现<strong>缓存
+                                (Cache)、重试、熔断与降级</strong>机制。当外部服务波动时，自动回退到本地演示与轻量知识库，确保课堂“不断电”。</li>
+                        <li><strong>MaaS 最佳实践</strong>：基于 ModelScope 创空间部署，Gradio 多标签页组织复杂交互，实现低成本、一键分发的公益落地。</li>
                     </ul>
                 </div>
             </div>
