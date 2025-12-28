@@ -49,15 +49,45 @@ function initCarousels() {
         const prevBtn = carousel.querySelector('.prev');
         const nextBtn = carousel.querySelector('.next');
         const dots = carousel.querySelectorAll('.dot');
+        const slides = carousel.getElementsByClassName("carousel-slide");
 
-        showSlides(slideIndex, carousel);
+        // Guard clause
+        if (!slides.length) return;
+
+        // Internal function to show slides
+        const showSlides = (n) => {
+            if (n > slides.length) { slideIndex = 1 }
+            else if (n < 1) { slideIndex = slides.length }
+            else { slideIndex = n }
+
+            // Update UI
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            if (dots.length > 0) {
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove('active-dot');
+                }
+            }
+
+            if (slides[slideIndex - 1]) {
+                slides[slideIndex - 1].classList.add('active');
+            }
+            if (dots.length > 0 && dots[slideIndex - 1]) {
+                dots[slideIndex - 1].classList.add('active-dot');
+            }
+        };
+
+        // Initial show
+        showSlides(slideIndex);
 
         // Auto-play functionality
         let slideInterval;
         const startSlideShow = () => {
+            clearInterval(slideInterval);
             slideInterval = setInterval(() => {
-                showSlides(slideIndex += 1, carousel);
-            }, 5000); // Change image every 5 seconds
+                showSlides(slideIndex + 1);
+            }, 5000);
         };
 
         const resetSlideShow = () => {
@@ -65,54 +95,32 @@ function initCarousels() {
             startSlideShow();
         }
 
-        // Initialize auto-play
         startSlideShow();
 
-        // Bind events with reset
+        // Bind events
         if (prevBtn) {
             prevBtn.onclick = (e) => {
                 e.preventDefault();
-                console.log('Prev clicked');
-                resetSlideShow(); // Reset timer on manual interaction
-                showSlides(slideIndex -= 1, carousel);
+                resetSlideShow();
+                showSlides(slideIndex - 1);
             };
         }
         if (nextBtn) {
             nextBtn.onclick = (e) => {
                 e.preventDefault();
-                console.log('Next clicked');
-                resetSlideShow(); // Reset timer on manual interaction
-                showSlides(slideIndex += 1, carousel);
+                resetSlideShow();
+                showSlides(slideIndex + 1);
             };
         }
 
-        dots.forEach((dot, dotIndex) => {
-            dot.onclick = (e) => {
-                e.preventDefault();
-                console.log('Dot clicked', dotIndex + 1);
-                resetSlideShow(); // Reset timer on manual interaction
-                showSlides(slideIndex = dotIndex + 1, carousel);
-            };
-        });
-
-        // Internal function to show slides for this specific carousel instance
-        function showSlides(n, container) {
-            let i;
-            let slides = container.getElementsByClassName("carousel-slide");
-            let dots = container.getElementsByClassName("dot");
-
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].classList.remove('active');
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].classList.remove('active-dot');
-            }
-
-            if (slides[slideIndex - 1]) slides[slideIndex - 1].classList.add('active');
-            if (dots[slideIndex - 1]) dots[slideIndex - 1].classList.add('active-dot');
+        if (dots.length > 0) {
+            dots.forEach((dot, dotIndex) => {
+                dot.onclick = (e) => {
+                    e.preventDefault();
+                    resetSlideShow();
+                    showSlides(dotIndex + 1);
+                };
+            });
         }
     });
 }
