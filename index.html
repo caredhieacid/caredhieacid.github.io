@@ -24,7 +24,7 @@
 
     <header class="glass-nav">
         <nav>
-            <div class="logo">MSJ.Dev</div>
+            <div class="logo">Mo.Dev</div>
             <ul class="nav-links">
                 <li><a href="#home">首页</a></li>
                 <li><a href="#about">关于我</a></li>
@@ -50,7 +50,7 @@
                 <h1 class="glitch" data-text="莫胜杰">莫胜杰</h1>
                 <p class="subtitle typing-effect">
                     现任龙芯中科（实习生）软件工程师<br>
-                    院士工作站进站助研员 | 百度PP飞桨与文心项目架构师
+                    四川省院士（专家）工作站进站助研员 | 百度PP飞桨与文心项目架构师
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="cta-button primary">查看商业落地项目</a>
@@ -111,7 +111,7 @@
                     <div class="timeline-content glass-card">
                         <span class="date">2024.09 - 至今</span>
                         <h3>四川省院士（专家）工作站</h3>
-                        <p><strong>进站助研员 / 项目组长 (实习)</strong></p>
+                        <p><strong>进站助研员 / 项目组长</strong></p>
                         <p class="description">
                             主导数字人项目后端架构，实现全模态大模型应用。
                             管理显卡集群服务器与 Gitlab，实打实扛起实验室真实业务开发重任。
@@ -137,8 +137,27 @@
 
         <!-- Projects Section -->
         <section id="projects" class="section-container">
-            <h2 class="section-title"><span>精选商业落地项目 (6项)</span></h2>
+            <h2 class="section-title"><span>做过的落地商业项目</span></h2>
             <div class="projects-grid">
+
+                <!-- NEW: Multimodal Digital Human -->
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-image placeholder-img"
+                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="project-icon">🤖</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span class="tag">Android/Java</span><span
+                                class="tag">Live2D</span><span class="tag">ByteDance ASR</span><span
+                                class="tag">RAG</span></div>
+                        <h3>全模态交互数字人 (落地天府中学等)</h3>
+                        <p>
+                            <strong>全栈/安卓/AI开发 | 2024.10 - 至今</strong><br>
+                            落地多所学校。后端自研 Text-to-SQL + 通义千问视觉交互；部署 BGE+LightRAG 知识库。
+                            安卓端基于 CameraX + DashScope SDK 实现全模态交互，引入回声消除算法，使用 Lora 微调 Qwen-14b 模型保障边缘算力。
+                        </p>
+                    </div>
+                </div>
 
                 <!-- Baidu Smart Car -->
                 <div class="project-card glass-card fade-in-up">
@@ -247,6 +266,62 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- Competition & Open Source Projects -->
+        <section id="competition-projects" class="section-container">
+            <h2 class="section-title"><span>开源大赛与个人项目</span></h2>
+
+            <!-- Hunyuan Podcast Studio (Detailed Featured) -->
+            <div class="glass-card fade-in-up" style="max-width: 100%; padding: 3rem;">
+                <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                    <div class="project-icon" style="font-size: 5rem; line-height: 1;">🎙️</div>
+                    <div>
+                        <h3 style="font-size: 2rem; color: #fff; margin-top: 0;">混元播客工坊 (Hunyuan Podcast Studio)</h3>
+                        <p
+                            style="color: var(--accent-secondary); font-weight: 600; font-size: 1.1rem; margin: 0.5rem 0 1rem;">
+                            第三届开放原子大赛·混元赛题 全国二等奖 🥈
+                        </p>
+                        <div class="project-tags" style="margin-bottom: 1.5rem;">
+                            <span class="tag">Python/FastAPI</span>
+                            <span class="tag">React/TS</span>
+                            <span class="tag">SoulX/CosyVoice</span>
+                            <span class="tag">Hunyuan LLM</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail-content" style="color: var(--text-secondary); line-height: 1.8;">
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong>【项目概述】</strong> 独立设计并实现的端到端智能播客生成平台。提出 <strong>"Director-Actor-Engineer"
+                            (导演-演员-后期)</strong> 三位一体生成范式，
+                        利用腾讯混元大模型将非结构化文本重构为多角色剧本，结合零样本语音克隆技术，实现电影级音频全自动化生产。
+                    </p>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🔹 后端架构与高并发设计</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc; margin-bottom: 1rem;">
+                        <li>基于 <strong>FastAPI + AsyncIO</strong> 构建微服务后端，设计多模态推理网关。</li>
+                        <li>首创 <strong>"段落级异步并发管线" (Paragraph-Level Async
+                                Pipeline)</strong>，将数千字剧本分发并行推理并在内存中流式拼接，<strong>生成效率提升 500%</strong>。</li>
+                        <li>实现 <strong>"熔断降级机制"</strong>：主模型超时自动切换 Edge-TTS/Llama，保障竞赛高压环境下 99.9% 可用性。</li>
+                    </ul>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🔹 核心音频引擎与 TTS 优化</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc; margin-bottom: 1rem;">
+                        <li>深度定制 <strong>AudioSynthesizer</strong> 引擎，通过 Prompt Engineering 实现 <strong>"Dialect
+                                Injection" (方言注入)</strong>，支持四川话、粤语等方言生成。支持用户音色克隆使用自己喜欢的音色。</li>
+                        <li>开发自动化后期系统，利用 pydub 实现基于 <strong>Side-chaining (侧链压缩)</strong> 的自动混音算法，精准调节 BGM
+                            音量包络，实现专业电台级过渡。</li>
+                    </ul>
+
+                    <h4 style="color: #fff; margin: 1.5rem 0 0.8rem;">🔹 解决方案设计思维</h4>
+                    <ul style="padding-left: 1.2rem; list-style: disc;">
+                        <li>践行 <strong>"模型即服务" (MaaS)</strong> 理念，通过 Agent Workflow 串联逻辑推理与 TTS 表现力。</li>
+                        <li>引入 <strong>Deep Research Agent</strong> (联网搜索 + RAG)，增强模型对复杂主题深度理解，自动生成兼具深度与趣味性的对话脚本。</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
