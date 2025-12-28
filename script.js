@@ -53,11 +53,27 @@ function initCarousels() {
         const nextBtn = carousel.querySelector('.next');
         const dots = carousel.querySelectorAll('.dot');
 
-        if (prevBtn) prevBtn.onclick = () => showSlides(slideIndex -= 1, carousel);
-        if (nextBtn) nextBtn.onclick = () => showSlides(slideIndex += 1, carousel);
+        if (prevBtn) {
+            prevBtn.onclick = (e) => {
+                e.preventDefault();
+                console.log('Prev clicked');
+                showSlides(slideIndex -= 1, carousel);
+            };
+        }
+        if (nextBtn) {
+            nextBtn.onclick = (e) => {
+                e.preventDefault();
+                console.log('Next clicked');
+                showSlides(slideIndex += 1, carousel);
+            };
+        }
 
         dots.forEach((dot, dotIndex) => {
-            dot.onclick = () => showSlides(slideIndex = dotIndex + 1, carousel);
+            dot.onclick = (e) => {
+                e.preventDefault();
+                console.log('Dot clicked', dotIndex + 1);
+                showSlides(slideIndex = dotIndex + 1, carousel);
+            };
         });
 
         // Internal function to show slides for this specific carousel instance
