@@ -46,6 +46,10 @@ function initCarousels() {
 
     carousels.forEach((carousel, index) => {
         let slideIndex = 1;
+        const prevBtn = carousel.querySelector('.prev');
+        const nextBtn = carousel.querySelector('.next');
+        const dots = carousel.querySelectorAll('.dot');
+
         showSlides(slideIndex, carousel);
 
         // Auto-play functionality
