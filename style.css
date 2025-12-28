@@ -757,11 +757,12 @@ footer {
 }
 
 /* Dots indicators */
-text-align: center;
-padding: 10px;
-background: rgba(0, 0, 0, 0.1);
-position: relative;
-z-index: 10;
+.carousel-dots {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
 }
 
 .dot {

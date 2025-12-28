@@ -48,15 +48,28 @@ function initCarousels() {
         let slideIndex = 1;
         showSlides(slideIndex, carousel);
 
-        // Bind events
-        const prevBtn = carousel.querySelector('.prev');
-        const nextBtn = carousel.querySelector('.next');
-        const dots = carousel.querySelectorAll('.dot');
+        // Auto-play functionality
+        let slideInterval;
+        const startSlideShow = () => {
+            slideInterval = setInterval(() => {
+                showSlides(slideIndex += 1, carousel);
+            }, 5000); // Change image every 5 seconds
+        };
 
+        const resetSlideShow = () => {
+            clearInterval(slideInterval);
+            startSlideShow();
+        }
+
+        // Initialize auto-play
+        startSlideShow();
+
+        // Bind events with reset
         if (prevBtn) {
             prevBtn.onclick = (e) => {
                 e.preventDefault();
                 console.log('Prev clicked');
+                resetSlideShow(); // Reset timer on manual interaction
                 showSlides(slideIndex -= 1, carousel);
             };
         }
@@ -64,6 +77,7 @@ function initCarousels() {
             nextBtn.onclick = (e) => {
                 e.preventDefault();
                 console.log('Next clicked');
+                resetSlideShow(); // Reset timer on manual interaction
                 showSlides(slideIndex += 1, carousel);
             };
         }
@@ -72,6 +86,7 @@ function initCarousels() {
             dot.onclick = (e) => {
                 e.preventDefault();
                 console.log('Dot clicked', dotIndex + 1);
+                resetSlideShow(); // Reset timer on manual interaction
                 showSlides(slideIndex = dotIndex + 1, carousel);
             };
         });
